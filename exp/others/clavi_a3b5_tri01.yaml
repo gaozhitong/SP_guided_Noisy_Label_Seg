@@ -1,0 +1,50 @@
+# SP JOCOR
+data:
+  dataset: BGDataset
+  dataname: clavicle
+  data_dir: '/group/gaozht/Dataset/JSRT_noise3c/'
+  aug_rot90: True   # rotate 90 degree
+
+  use_noisy_label: True
+  load_clean_label: True
+  dataset_noise_ratio: 0.3
+  sample_noise_ratio:  0.5
+
+  crop_style: True    # use cropped image and labels
+
+model:
+  network: 'Generic_UNet'
+  pool_op_kernel_sizes: '[[2, 2], [2, 2], [2, 2], [2, 2], [1, 2]]'   # down [16, 32]
+  conv_kernel_sizes: '[[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]]'
+
+  deep_supervision: False
+  use_finetune: False
+  finetune_model_path: ''
+
+train:
+  n_epochs: 200
+  n_batches: 150
+  train_batch: 8
+  valid_batch: 2
+
+  loss_name: 'MultipleOutputLoss2'
+  fg_weight: 1
+  auto_weight: True
+  with_dice_loss: 0
+
+  optimizer: SGD
+  momentum: 0.99
+  lr: 5.0e-3
+  lr_decay: 'constant'
+  min_lr: 0.00
+
+framework:
+
+  # framework
+  co_teaching: True
+  warmup_epoch: 5
+  tri_net: True
+
+  # selection
+  remember_rate_bg: 0.9949
+  remember_rate_fg: 0.9330
