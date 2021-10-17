@@ -55,15 +55,18 @@ python superpixel_generation.py
 python stat_niose_ratio.py
 ```
 
-## Training.
+## Training
 ```angular2html
 python main.py --cfg 'exp/proposed/skin_a3b5_spemj01.yaml' --id skin_a3b5_spemj01 --parallel 
 ```
 
-## Inference.
+## Inference
 ```angular2html
 python main.py --cfg 'exp/proposed/skin_a3b5_spemj01.yaml' --id skin_a3b5_spemj01 --demo 'val' \
 --weight_path './checkpoints/skin_a3b5_spemj01/model_epoch_200.pth' --parallel --save_preds True
 ```
 
 ** Feel free to contact us if confused with above pipeline, and we will make "readme" more clear.
+
+## Todo list:
+- Upload JSRT Superpixels & Datasets packages.
