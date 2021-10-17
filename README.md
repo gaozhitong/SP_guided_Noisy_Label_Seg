@@ -14,19 +14,19 @@ If you use our code in your publications, please consider citing our paper:
 ![avatar](./pict/model_overview.png)
 
 ## Get started
-###0. Environment
+### 0. Environment
 Install the necessary requirements on your environment of choice:
 ```angular2html
 pip install -r requirements.txt
 ```
 
-###1.Download Original Datasets
+### 1.Download Original Datasets
 1. **ISIC 2017 datasets**: Download training data and test data at this [link](https://challenge.isic-archive.com/data/).
 2. **JSRT datasets**: Download [image](http://db.jsrt.or.jp/eng.php) and [segmentation masks](https://www.isi.uu.nl/Research/Databases/SCR/).
 
 Note: we suggest you to try the code on ISIC dataset first, then apply on JSRT dataset due to its complicated preprocess procedure.
 
-###2. Simulate Noise Patterns
+### 2. Simulate Noise Patterns
 Material:
 1. data_process/pipeline.py
 2. ISIC & JSRT clean data
