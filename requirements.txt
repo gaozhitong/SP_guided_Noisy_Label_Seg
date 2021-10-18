@@ -1,0 +1,31 @@
+## python & pytorch environments
+# python==3.6
+# torch==1.4.0
+# torchvision==0.5.0
+
+argparse
+ast
+batchgenerators
+copy
+datetime
+easydict
+gc
+glob
+ipdb
+json
+logging
+math
+matplotlib
+numpy
+opencv-python
+os
+random
+scipy
+shutil
+skimage
+sklearn
+tensorboardX
+time
+tqdm
+typing
+yaml

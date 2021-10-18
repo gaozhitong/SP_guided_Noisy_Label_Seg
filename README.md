@@ -68,5 +68,16 @@ python main.py --cfg 'exp/proposed/skin_a3b5_spemj01.yaml' --id skin_a3b5_spemj0
 
 ** Feel free to contact us if confused with above pipeline, and we will make "readme" more clear.
 
+---
+### *. [Optional] Crop
+**Clavicles are particularly small, to facilitate ﬁne-grained segmentation and reduce consuming time, we crop their region of interest by statistics on the training set.
+
+
+**After *2. Simulate Noise Patterns*
+```angular2html
+# change to your parameters first (Params, roots, rois)
+python crop_pipeline.py
+```
+
 ## Todo list:
 - Upload JSRT Superpixels & Datasets packages.
