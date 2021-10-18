@@ -52,7 +52,7 @@ python superpixel_generation.py
 **We assume noise ratios are given following previous works, thus obtain them here.
 ```angular2html
 # change to your parameters first (subdir, cls, Params, ...)
-python stat_niose_ratio.py
+python stat_noise_ratio.py
 ```
 
 ## Training
