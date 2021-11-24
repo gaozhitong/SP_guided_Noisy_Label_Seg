@@ -8,7 +8,7 @@ from skimage.io import imread, imsave
 import skimage.exposure
 from glob import glob
 import json
-from jsrt_organize import NpEncoder #data_process.
+from data_process.util import NpEncoder
 import os
 import numpy as np
 import argparse
