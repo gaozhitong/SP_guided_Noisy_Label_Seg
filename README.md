@@ -20,9 +20,7 @@ If you use our code in your publications, please consider citing our paper:
 Install the necessary requirements on your environment of choice:
 
 Key Requirements
-+ python==3.6
-+ pytorch==1.4.0
-+ torchvision==0.5.0
++ python==3.6.10
 ```angular2html
 # install other necessary packages
 pip install -r requirements.txt
