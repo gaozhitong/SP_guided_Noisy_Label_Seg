@@ -3,11 +3,13 @@ This repository contains a PyTorch implementation of the MICCAI 2021 paper "[Sup
 
 If you use our code in your publications, please consider citing our paper:
 ```angular2html
-@misc{li2021superpixelguided,
-      title={Superpixel-guided Iterative Learning from Noisy Labels for Medical Image Segmentation}, 
-      author={Shuailin Li and Zhitong Gao and Xuming He},
-      year={2021},
-      archivePrefix={arXiv},
+@inproceedings{li2021superpixel,
+  title={Superpixel-Guided Iterative Learning from Noisy Labels for Medical Image Segmentation},
+  author={Li, Shuailin and Gao, Zhitong and He, Xuming},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={525--535},
+  year={2021},
+  organization={Springer}
 }
 ```
 
@@ -16,7 +18,13 @@ If you use our code in your publications, please consider citing our paper:
 ## Get started
 ### 0. Environment
 Install the necessary requirements on your environment of choice:
+
+Key Requirements
++ python==3.6
++ pytorch==1.4.0
++ torchvision==0.5.0
 ```angular2html
+# install other necessary packages
 pip install -r requirements.txt
 ```
 
