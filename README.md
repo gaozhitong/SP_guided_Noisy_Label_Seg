@@ -62,6 +62,21 @@ python stat_noise_ratio.py
 ```
 
 ## Training
+Please replace the <data_dir>, <em_save_pseudo_dir> and <sp_name> in the experiment config files.
+
+<data_dir> is the root dir for the dataset. Make sure it looks like: 
+- data_dir
+    - train
+        - image
+        - label
+        - label_noise_xx_xx
+        - <sp_name> # superpixel dir
+    - val
+        - ...
+        
+For the detailed information of directory settings, please refer to lib/datasets/batch_dataset.py.
+
+After that, start training with following codes.
 ```angular2html
 python main.py --cfg 'exp/proposed/skin_a3b5_spemj01.yaml' --id skin_a3b5_spemj01 --parallel 
 ```
