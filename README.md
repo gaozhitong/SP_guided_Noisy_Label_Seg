@@ -1,5 +1,6 @@
 # SP_guided_Noisy_Label_Seg
-This repository contains a PyTorch implementation of the MICCAI 2021 paper "[Superpixel-guided Iterative Learning from Noisy Labels for Medical Image Segmentation"](https://miccai2021.org/openaccess/paperlinks/2021/09/01/460-Paper1575.html#author-id).
+This repository contains a PyTorch implementation of the MICCAI 2021 paper "[Superpixel-guided Iterative Learning from Noisy Labels for Medical Image Segmentation"](https://miccai2021.org/openaccess/paperlinks/2021/09/01/460-Paper1575.html#author-id). 
+[[Video]](https://www.youtube.com/watch?v=EviOSZfXjMg). 
 
 If you use our code in your publications, please consider citing our paper:
 ```angular2html
