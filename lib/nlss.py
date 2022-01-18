@@ -429,11 +429,7 @@ class NLSS(object):
 
                 # Update forget rates and correct rates.
                 pfr_bg = np.ones(num_epochs + 1) * (1 - opt.framework.remember_rate_bg)
-                pfr_bg[epoch: epoch + opt.framework.warmup_epoch2] = np.linspace(0, 1 - opt.framework.remember_rate_bg,
-                                                                  opt.framework.warmup_epoch2)
                 pfr_fg = np.ones(num_epochs + 1) * (1 - opt.framework.remember_rate_fg)
-                pfr_fg[epoch: epoch + opt.framework.warmup_epoch2] = np.linspace(0, 1 - opt.framework.remember_rate_fg,
-                                     opt.framework.warmup_epoch2)
                 opt.framework.corr_ratio_fg = round(
                     (1 - opt.framework.remember_rate_fg) * opt.framework.corr_ratio_decay, 4)
                 opt.framework.corr_ratio_bg = round(
