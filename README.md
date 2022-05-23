@@ -8,9 +8,7 @@ If you use our code in your publications, please consider citing our paper:
   title={Superpixel-Guided Iterative Learning from Noisy Labels for Medical Image Segmentation},
   author={Li, Shuailin and Gao, Zhitong and He, Xuming},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-  pages={525--535},
   year={2021},
-  organization={Springer}
 }
 ```
 
