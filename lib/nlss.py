@@ -256,9 +256,6 @@ class NLSS(object):
     def train(self):
         # init
         num_epochs = opt.train.n_epochs
-        if (args.max_epoch != -1) and (args.max_epoch < num_epochs):
-            num_epochs = args.max_epoch
-            print('Early stopping used: max epoch %d' % num_epochs)
         loss_meter, dice_meter = MultiLossMeter(), MultiLossMeter()
         total_iter = {'train': 0, 'val': 0, 'test': 0}
         ## warmup dataloader
